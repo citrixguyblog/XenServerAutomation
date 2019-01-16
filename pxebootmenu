@@ -1,0 +1,24 @@
+default menu.c32
+prompt 0
+timeout 180
+ONTIMEOUT bootlocal
+
+menu title Hypervisor Deployment
+
+label bootlocal
+menu label Boot Local OS
+localboot 0
+
+label xenserver71
+menu label Install Citrix XenServer 7.1 CU1
+ kernel mboot.c32
+ append xs7.1/xen.gz dom0_max_vcpus=2 dom0_mem=1024M,max:1024M com1=115200,8n1 console=com1,vga --- xs7.1/vmlinuz xencons=hvc console=hvc0 console=tty0 answerfile=ftp://192.168.2.149/xenserver/config/XEN-01.xml install --- xs7.1/install.img
+
+
+label xenserver76
+menu label Install Citrix XenServer 7.6
+ kernel mboot.c32
+ append xs7.6/xen.gz dom0_max_vcpus=2 dom0_mem=1024M,max:1024M com1=115200,8n1 console=com1,vga --- xs7.6/vmlinuz xencons=hvc console=hvc0 console=tty0 answerfile=ftp://192.168.2.2/xenserver/config/NUC-01.xml install --- xs7.6/install.img
+
+
+
