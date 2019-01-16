@@ -1,6 +1,6 @@
 #!/bin/sh
 #Unattended XenServer Script
-#Created by: Michael Winkler, Julian Mooren (CANCOM)
+#Created by: Julian Mooren, Michael Winkler
 #Version: 1.2
 #Creation date: 01-19-2019
 
