@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<installation mode="fresh" srtype="ext">
+<hostname>XEN-01</hostname>
+<keymap>de</keymap>
+<primary-disk>sda</primary-disk>
+<guest-disk>sda</guest-disk>
+<root-password>123456</root-password>
+<source type="url">ftp://192.168.2.149/xenserver/7.1</source>
+<script stage="filesystem-populated" type="url">ftp://192.168.2.149/xenserver/scripts/post-script.sh</script>
+<admin-interface name="eth0" proto="static">
+<ip>192.168.2.25</ip>
+<subnet-mask>255.255.255.0</subnet-mask>
+<gateway>192.168.2.1</gateway>
+</admin-interface>
+<timezone>Europe/London</timezone>
+<name-server>192.168.2.10</name-server>
+<time-config-method>ntp</time-config-method>
+<ntp-server>129.6.15.28</ntp-server>
+<ntp-server>129.6.15.29</ntp-server>
+<ntp-server>129.6.15.30</ntp-server>
+</installation>
