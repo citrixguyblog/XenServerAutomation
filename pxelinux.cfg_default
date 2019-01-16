@@ -18,7 +18,7 @@ menu label Install Citrix XenServer 7.1 CU1
 label xenserver76
 menu label Install Citrix XenServer 7.6
  kernel mboot.c32
- append xs7.6/xen.gz dom0_max_vcpus=2 dom0_mem=1024M,max:1024M com1=115200,8n1 console=com1,vga --- xs7.6/vmlinuz xencons=hvc console=hvc0 console=tty0 answerfile=ftp://192.168.2.2/xenserver/config/NUC-01.xml install --- xs7.6/install.img
+ append xs7.6/xen.gz dom0_max_vcpus=2 dom0_mem=1024M,max:1024M com1=115200,8n1 console=com1,vga --- xs7.6/vmlinuz xencons=hvc console=hvc0 console=tty0 answerfile=ftp://192.168.2.149/xenserver/config/XEN-02.xml install --- xs7.6/install.img
 
 
 
